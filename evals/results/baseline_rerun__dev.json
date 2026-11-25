@@ -1,0 +1,1436 @@
+{
+  "config": {
+    "set": "dev",
+    "tag": "baseline_rerun",
+    "top_k": 4,
+    "min_similarity": 0.5,
+    "prompt_version": "v1",
+    "llm": "gpt-4o-mini",
+    "judge": "gpt-4.1-mini",
+    "n_questions": 44,
+    "eval_fingerprint": "551f9f0726db",
+    "run_at": "2026-11-26T00:02:11"
+  },
+  "summary": {
+    "retrieval_hit_at_k": 1,
+    "retrieval_recall_at_k": 0.9625,
+    "retrieval_mrr": 0.9708333333333333,
+    "retrieval_precision_at_k": 0.28125,
+    "avg_chunks_retrieved": 4,
+    "answer_accuracy": 0.95,
+    "answer_correctness_avg": 4.7,
+    "faithfulness": 0.95,
+    "completeness": 0.90625,
+    "false_refusal_rate": 0.025,
+    "correct_refusal_rate": 1,
+    "leak_rate": 0.022727272727272728
+  },
+  "rows": [
+    {
+      "id": "d01",
+      "type": "answerable",
+      "question": "What causes cavities?",
+      "retrieved": [
+        "01_cavities_caries.md > What causes cavities? (0.846)",
+        "01_cavities_caries.md > What is a cavity? (0.822)",
+        "01_cavities_caries.md > What are the symptoms of a cavity? (0.739)",
+        "01_cavities_caries.md > Can a cavity heal on its own? (0.720)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Cavities are caused by bacteria in the mouth, primarily Streptococcus mutans, which feed on sugars and produce acids. These acids dissolve the minerals in tooth enamel. Frequent sugar intake throughout the day is the single biggest dietary risk factor for cavities in Sweden.",
+      "raw_answer": "Cavities are caused by bacteria in the mouth, primarily Streptococcus mutans, which feed on sugars and produce acids. These acids dissolve the minerals in tooth enamel. Frequent sugar intake throughout the day is the single biggest dietary risk factor for cavities in Sweden [1].",
+      "refused": false,
+      "cited": [
+        "01_cavities_caries.md > What causes cavities?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d02",
+      "type": "answerable",
+      "question": "Can an early cavity heal by itself?",
+      "retrieved": [
+        "01_cavities_caries.md > Can a cavity heal on its own? (0.831)",
+        "01_cavities_caries.md > What is a cavity? (0.658)",
+        "01_cavities_caries.md > How are cavities treated in Sweden? (0.656)",
+        "01_cavities_caries.md > What are the symptoms of a cavity? (0.624)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Very early-stage cavities (white spot lesions) can remineralize with fluoride and improved oral hygiene. Once a physical hole has formed in the tooth, it cannot heal itself and requires professional treatment.",
+      "raw_answer": "Very early-stage cavities (white spot lesions) can remineralize with fluoride and improved oral hygiene [1]. Once a physical hole has formed in the tooth, it cannot heal itself and requires professional treatment [1].",
+      "refused": false,
+      "cited": [
+        "01_cavities_caries.md > Can a cavity heal on its own?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "d03",
+      "type": "answerable",
+      "question": "What fluoride level should adult toothpaste have?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > What toothpaste should I use? (0.846)",
+        "01_cavities_caries.md > How can I prevent cavities? (0.740)",
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.735)",
+        "07_pediatric_dental_care.md > Is fluoride recommended for children in Sweden? (0.701)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.5,
+        "n_retrieved": 4
+      },
+      "answer": "Adult toothpaste should have at least 1,450 ppm fluoride.",
+      "raw_answer": "Adult toothpaste should have at least 1,450 ppm fluoride [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > What toothpaste should I use?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 1,
+      "missed_facts": []
+    },
+    {
+      "id": "d04",
+      "type": "answerable",
+      "question": "What is the difference between gingivitis and periodontitis?",
+      "retrieved": [
+        "02_gum_disease_periodontitis.md > What is the difference between gingivitis and periodontitis? (0.893)",
+        "02_gum_disease_periodontitis.md > Can gum disease be cured? (0.754)",
+        "02_gum_disease_periodontitis.md > What is gum disease? (0.751)",
+        "02_gum_disease_periodontitis.md > What are the symptoms of gum disease? (0.695)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "- Gingivitis is the earliest stage of gum disease, characterized by red, swollen gums that bleed easily when brushing. No bone loss has occurred yet, and it is fully reversible with proper cleaning and improved home care.\n- Periodontitis is the advanced stage of gum disease, where the gum and bone pull away from the teeth, forming deep pockets that become infected. This stage involves the destruction of bone and connective tissue, and without treatment, teeth may loosen and require extraction.",
+      "raw_answer": "- Gingivitis is the earliest stage of gum disease, characterized by red, swollen gums that bleed easily when brushing. No bone loss has occurred yet, and it is fully reversible with proper cleaning and improved home care [1].\n- Periodontitis is the advanced stage of gum disease, where the gum and bone pull away from the teeth, forming deep pockets that become infected. This stage involves the destruction of bone and connective tissue, and without treatment, teeth may loosen and require extraction [1].",
+      "refused": false,
+      "cited": [
+        "02_gum_disease_periodontitis.md > What is the difference between gingivitis and periodontitis?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "d05",
+      "type": "answerable",
+      "question": "Is periodontitis curable?",
+      "retrieved": [
+        "02_gum_disease_periodontitis.md > Can gum disease be cured? (0.812)",
+        "02_gum_disease_periodontitis.md > Is gum disease treatment covered in Sweden? (0.700)",
+        "02_gum_disease_periodontitis.md > What is the difference between gingivitis and periodontitis? (0.692)",
+        "02_gum_disease_periodontitis.md > How is gum disease treated in Sweden? (0.682)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Periodontitis cannot be fully cured, as the lost bone does not regenerate. However, it can be stabilized and its progression stopped with proper treatment and consistent home care. Lifelong maintenance is essential.",
+      "raw_answer": "Periodontitis cannot be fully cured, as the lost bone does not regenerate. However, it can be stabilized and its progression stopped with proper treatment and consistent home care. Lifelong maintenance is essential [1].",
+      "refused": false,
+      "cited": [
+        "02_gum_disease_periodontitis.md > Can gum disease be cured?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d06",
+      "type": "answerable",
+      "question": "What happens during a root canal treatment?",
+      "retrieved": [
+        "03_root_canal.md > What happens during a root canal? (0.861)",
+        "03_root_canal.md > What happens after a root canal? (0.830)",
+        "03_root_canal.md > What is a root canal? (0.825)",
+        "03_root_canal.md > Is a root canal painful? (0.798)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "During a root canal treatment, the following steps occur:\n\n1. An X-ray is taken to map the root canals and check for infection in the surrounding bone.\n2. Local anesthesia is applied to fully numb the tooth and surrounding area.\n3. A rubber dam is placed around the tooth to keep it dry and free of saliva.\n4. A small opening is drilled into the crown of the tooth.\n5. Infected or inflamed pulp is removed using fine instruments.\n6. Canals are cleaned, shaped, and irrigated with an antiseptic solution.\n7. Canals are filled with a rubber-like material called gutta-percha and sealed.\n8. A crown is usually placed over the tooth at a later appointment to protect it.",
+      "raw_answer": "During a root canal treatment, the following steps occur:\n\n1. An X-ray is taken to map the root canals and check for infection in the surrounding bone [1].\n2. Local anesthesia is applied to fully numb the tooth and surrounding area [1].\n3. A rubber dam is placed around the tooth to keep it dry and free of saliva [1].\n4. A small opening is drilled into the crown of the tooth [1].\n5. Infected or inflamed pulp is removed using fine instruments [1].\n6. Canals are cleaned, shaped, and irrigated with an antiseptic solution [1].\n7. Canals are filled with a rubber-like material called gutta-percha and sealed [1].\n8. A crown is usually placed over the tooth at a later appointment to protect it [1].",
+      "refused": false,
+      "cited": [
+        "03_root_canal.md > What happens during a root canal?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 8,
+      "missed_facts": []
+    },
+    {
+      "id": "d07",
+      "type": "answerable",
+      "question": "How much does a root canal cost?",
+      "retrieved": [
+        "03_root_canal.md > How much does a root canal cost in Sweden? (0.831)",
+        "12_wisdom_teeth_extraction.md > What does a tooth extraction cost? (0.695)",
+        "04_dental_implants.md > How much do implants cost in Sweden? (0.683)",
+        "03_root_canal.md > What is a root canal? (0.682)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Root canal treatment at Folktandvården typically costs between 2,000–6,000 SEK depending on the tooth and complexity. Private clinics may charge more. The treatment is covered under the högkostnadsskydd system, meaning the state subsidizes a portion of costs above the threshold. Children and young people receive free dental care until 31 December of the year they turn 19.",
+      "raw_answer": "Root canal treatment at Folktandvården typically costs between 2,000–6,000 SEK depending on the tooth and complexity. Private clinics may charge more. The treatment is covered under the högkostnadsskydd system, meaning the state subsidizes a portion of costs above the threshold. Children and young people receive free dental care until 31 December of the year they turn 19 [1].",
+      "refused": false,
+      "cited": [
+        "03_root_canal.md > How much does a root canal cost in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "d08",
+      "type": "answerable",
+      "question": "Who is a good candidate for dental implants?",
+      "retrieved": [
+        "04_dental_implants.md > Who is a good candidate for implants? (0.836)",
+        "04_dental_implants.md > What is the success rate of implants? (0.700)",
+        "04_dental_implants.md > What is a dental implant? (0.675)",
+        "04_dental_implants.md > Are there alternatives to implants? (0.668)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "A good candidate for dental implants includes:\n\n- Adults with one or more missing teeth\n- People with sufficient jawbone density to support the implant\n- Non-smokers or those willing to quit, as smoking significantly reduces success rates\n- Individuals with well-controlled general health conditions\n- Those with good oral hygiene\n\nPeople with uncontrolled diabetes, active gum disease, or insufficient bone may need preparatory treatment before implants are possible.",
+      "raw_answer": "A good candidate for dental implants includes:\n\n- Adults with one or more missing teeth\n- People with sufficient jawbone density to support the implant\n- Non-smokers or those willing to quit, as smoking significantly reduces success rates\n- Individuals with well-controlled general health conditions\n- Those with good oral hygiene\n\nPeople with uncontrolled diabetes, active gum disease, or insufficient bone may need preparatory treatment before implants are possible [1].",
+      "refused": false,
+      "cited": [
+        "04_dental_implants.md > Who is a good candidate for implants?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 6,
+      "missed_facts": []
+    },
+    {
+      "id": "d09",
+      "type": "answerable",
+      "question": "What is peri-implantitis?",
+      "retrieved": [
+        "04_dental_implants.md > What is peri-implantitis? (0.896)",
+        "12_wisdom_teeth_extraction.md > What is pericoronitis? (0.705)",
+        "04_dental_implants.md > How do I care for an implant? (0.633)",
+        "05_toothache_dental_emergencies.md > What is a dental abscess? (0.618)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Peri-implantitis is an inflammatory condition affecting the gum and bone around a dental implant, similar to periodontitis around natural teeth. It is caused by bacterial buildup and can lead to bone loss and implant failure if untreated. Regular maintenance and good home care are essential to prevent it.",
+      "raw_answer": "Peri-implantitis is an inflammatory condition affecting the gum and bone around a dental implant, similar to periodontitis around natural teeth. It is caused by bacterial buildup and can lead to bone loss and implant failure if untreated. Regular maintenance and good home care are essential to prevent it [1].",
+      "refused": false,
+      "cited": [
+        "04_dental_implants.md > What is peri-implantitis?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "d10",
+      "type": "answerable",
+      "question": "How long does the whole implant process take?",
+      "retrieved": [
+        "04_dental_implants.md > What does the implant process look like in Sweden? (0.826)",
+        "10_orthodontics_braces.md > How long does treatment take? (0.716)",
+        "04_dental_implants.md > How long do implants last? (0.715)",
+        "04_dental_implants.md > Are implants painful? (0.712)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "The implant process typically takes 3–9 months from start to finish. This includes several stages: consultation and X-rays/3D scan, possible bone grafting, implant placement, abutment placement, and crown placement.",
+      "raw_answer": "The implant process typically takes 3–9 months from start to finish. This includes several stages: consultation and X-rays/3D scan, possible bone grafting, implant placement, abutment placement, and crown placement [1].",
+      "refused": false,
+      "cited": [
+        "04_dental_implants.md > What does the implant process look like in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.5,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": [
+        "After the implant is placed there is a healing period of 3–6 months"
+      ]
+    },
+    {
+      "id": "d11",
+      "type": "answerable",
+      "question": "What can I do for a toothache while I wait to see the dentist?",
+      "retrieved": [
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.855)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.785)",
+        "05_toothache_dental_emergencies.md > What if a tooth is cracked or chipped? (0.722)",
+        "05_toothache_dental_emergencies.md > My face or cheek is swollen, or I have a fever with a toothache. What should I do? (0.715)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "- Take over-the-counter pain relief (ibuprofen is generally more effective for dental pain than paracetamol).\n- Apply a cold compress to the outside of the cheek — 20 minutes on, 20 minutes off.\n- Avoid very hot, cold, or sweet foods that may worsen pain.\n- Clove oil (eugenol) applied to the tooth can temporarily relieve pain.\n- Do not place aspirin directly on the gum — this can burn tissue.",
+      "raw_answer": "- Take over-the-counter pain relief (ibuprofen is generally more effective for dental pain than paracetamol) [1].\n- Apply a cold compress to the outside of the cheek — 20 minutes on, 20 minutes off [1].\n- Avoid very hot, cold, or sweet foods that may worsen pain [1].\n- Clove oil (eugenol) applied to the tooth can temporarily relieve pain [1].\n- Do not place aspirin directly on the gum — this can burn tissue [1].",
+      "refused": false,
+      "cited": [
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 5,
+      "missed_facts": []
+    },
+    {
+      "id": "d12",
+      "type": "answerable",
+      "question": "How do I get emergency dental care in Sweden in the middle of the night?",
+      "retrieved": [
+        "05_toothache_dental_emergencies.md > How does emergency dental care work in Sweden? (0.829)",
+        "05_toothache_dental_emergencies.md > What are the costs for emergency dental care in Sweden? (0.796)",
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth? (0.750)",
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden? (0.743)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 0.5,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "For emergency dental care in Sweden in the middle of the night, you can:\n\n- Call 1177 Vårdguiden for guidance on whether your situation is a dental emergency and to be directed to the appropriate care. They can assist you outside of normal clinic hours.\n- Visit a private dental clinic that may have emergency hours or dedicated acute appointments.\n\nIf you have a severe dental issue, such as facial swelling, difficulty breathing or swallowing, or a high fever, go directly to the nearest emergency room.",
+      "raw_answer": "For emergency dental care in Sweden in the middle of the night, you can:\n\n- Call 1177 Vårdguiden for guidance on whether your situation is a dental emergency and to be directed to the appropriate care. They can assist you outside of normal clinic hours [1].\n- Visit a private dental clinic that may have emergency hours or dedicated acute appointments [1].\n\nIf you have a severe dental issue, such as facial swelling, difficulty breathing or swallowing, or a high fever, go directly to the nearest emergency room [1].",
+      "refused": false,
+      "cited": [
+        "05_toothache_dental_emergencies.md > How does emergency dental care work in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d13",
+      "type": "answerable",
+      "question": "My son knocked out one of his adult front teeth. What should we do?",
+      "retrieved": [
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth? (0.741)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.729)",
+        "05_toothache_dental_emergencies.md > What if a tooth is cracked or chipped? (0.652)",
+        "10_orthodontics_braces.md > Can adults get braces? (0.639)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.5,
+        "n_retrieved": 4
+      },
+      "answer": "- This is a dental emergency. Keep the tooth moist (in milk, or between the cheek and gum).\n- Do not scrub the root of the tooth.\n- See a dentist immediately — ideally within 30 minutes.",
+      "raw_answer": "- This is a dental emergency. Keep the tooth moist (in milk, or between the cheek and gum) [1].\n- Do not scrub the root of the tooth [2].\n- See a dentist immediately — ideally within 30 minutes [1][2].",
+      "refused": false,
+      "cited": [
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth?",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out?"
+      ],
+      "leaks": [],
+      "correctness": 3,
+      "completeness": 0.5,
+      "accurate": false,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": [
+        "Pick the tooth up by the crown, not the root",
+        "Put it back in the socket if possible, otherwise keep it moist in milk or between the cheek and gum"
+      ]
+    },
+    {
+      "id": "d14",
+      "type": "answerable",
+      "question": "Are cold sores contagious?",
+      "retrieved": [
+        "06_oral_mucosa_mouth_sores.md > What is oral herpes (cold sores)? (0.741)",
+        "06_oral_mucosa_mouth_sores.md > What are aphthous ulcers (mouth ulcers)? (0.608)",
+        "06_oral_mucosa_mouth_sores.md > What is oral candidiasis (thrush)? (0.596)",
+        "06_oral_mucosa_mouth_sores.md > What are denture sores? (0.582)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Yes, cold sores are contagious. They are caused by the herpes simplex virus type 1 (HSV-1) and can spread to others through direct contact.",
+      "raw_answer": "Yes, cold sores are contagious. They are caused by the herpes simplex virus type 1 (HSV-1) and can spread to others through direct contact. [1]",
+      "refused": false,
+      "cited": [
+        "06_oral_mucosa_mouth_sores.md > What is oral herpes (cold sores)?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.6666666666666666,
+      "accurate": true,
+      "faithful": false,
+      "incorrect_claims": [],
+      "unsupported_claims": [
+        "Cold sores can spread to others through direct contact"
+      ],
+      "n_claims": 3,
+      "missed_facts": [
+        "Antiviral cream (aciclovir) used at the first tingling can shorten the outbreak"
+      ]
+    },
+    {
+      "id": "d15",
+      "type": "answerable",
+      "question": "I have a sore in my mouth that hasn't healed in three weeks. Should I worry?",
+      "retrieved": [
+        "06_oral_mucosa_mouth_sores.md > Should I see a dentist or a doctor for mouth sores? (0.762)",
+        "06_oral_mucosa_mouth_sores.md > What is oral cancer and when should I be concerned? (0.758)",
+        "06_oral_mucosa_mouth_sores.md > What are aphthous ulcers (mouth ulcers)? (0.725)",
+        "12_wisdom_teeth_extraction.md > How much pain and swelling is normal? (0.704)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.5,
+        "n_retrieved": 4
+      },
+      "answer": "Yes, you should seek professional evaluation since a sore that does not heal within 2–3 weeks is a reason for concern. It's best to contact a dentist for this issue.",
+      "raw_answer": "Yes, you should seek professional evaluation since a sore that does not heal within 2–3 weeks is a reason for concern [1][2]. It's best to contact a dentist for this issue [1].",
+      "refused": false,
+      "cited": [
+        "06_oral_mucosa_mouth_sores.md > Should I see a dentist or a doctor for mouth sores?",
+        "06_oral_mucosa_mouth_sores.md > What is oral cancer and when should I be concerned?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.5,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": [
+        "It can be an early sign of oral cancer"
+      ]
+    },
+    {
+      "id": "d16",
+      "type": "answerable",
+      "question": "What causes dry mouth and why is it bad for my teeth?",
+      "retrieved": [
+        "06_oral_mucosa_mouth_sores.md > What is dry mouth (xerostomia)? (0.867)",
+        "14_lifestyle_snus_bad_breath_grinding.md > What causes bad breath? (0.774)",
+        "02_gum_disease_periodontitis.md > What causes gum disease? (0.765)",
+        "14_lifestyle_snus_bad_breath_grinding.md > How does smoking affect my teeth and gums? (0.741)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Dry mouth is caused by several factors, including:\n\n- Certain medications (antihistamines, antidepressants, blood pressure medications)\n- Radiation therapy to the head and neck\n- Sjögren's syndrome (an autoimmune condition)\n- Mouth breathing\n- Dehydration.\n\nDry mouth is bad for your teeth because saliva is essential for:\n\n- Neutralizing acids\n- Washing away food particles\n- Preventing tooth decay\n\nA lack of saliva significantly increases the risk of cavities and gum disease.",
+      "raw_answer": "Dry mouth is caused by several factors, including:\n\n- Certain medications (antihistamines, antidepressants, blood pressure medications)\n- Radiation therapy to the head and neck\n- Sjögren's syndrome (an autoimmune condition)\n- Mouth breathing\n- Dehydration [1].\n\nDry mouth is bad for your teeth because saliva is essential for:\n\n- Neutralizing acids\n- Washing away food particles\n- Preventing tooth decay\n\nA lack of saliva significantly increases the risk of cavities and gum disease [1].",
+      "refused": false,
+      "cited": [
+        "06_oral_mucosa_mouth_sores.md > What is dry mouth (xerostomia)?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": false,
+      "incorrect_claims": [],
+      "unsupported_claims": [
+        "Dry mouth is caused by Sj\u0000f6gren's syndrome (an autoimmune condition)"
+      ],
+      "n_claims": 9,
+      "missed_facts": []
+    },
+    {
+      "id": "d17",
+      "type": "answerable",
+      "question": "How much toothpaste should my 3-year-old use?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > What toothpaste should I use? (0.774)",
+        "07_pediatric_dental_care.md > How should I clean my child's teeth? (0.724)",
+        "07_pediatric_dental_care.md > Is fluoride recommended for children in Sweden? (0.691)",
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.688)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Your 3-year-old should use a pea-sized amount of fluoride toothpaste when brushing their teeth. It's important to supervise brushing to ensure they spit rather than swallow the toothpaste.",
+      "raw_answer": "Your 3-year-old should use a pea-sized amount of fluoride toothpaste when brushing their teeth. It's important to supervise brushing to ensure they spit rather than swallow the toothpaste [2].",
+      "refused": false,
+      "cited": [
+        "07_pediatric_dental_care.md > How should I clean my child's teeth?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "d18",
+      "type": "answerable",
+      "question": "Do I need to book my child's dental checkups myself in Sweden?",
+      "retrieved": [
+        "07_pediatric_dental_care.md > How often should children visit the dentist in Sweden? (0.806)",
+        "07_pediatric_dental_care.md > When should my child first see a dentist in Sweden? (0.796)",
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden? (0.790)",
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth? (0.769)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "No, you do not need to book your child's dental checkups yourself. The clinic sends invitations automatically based on the child's individual risk level, typically every 6–24 months.",
+      "raw_answer": "No, you do not need to book your child's dental checkups yourself. The clinic sends invitations automatically based on the child's individual risk level, typically every 6–24 months [1].",
+      "refused": false,
+      "cited": [
+        "07_pediatric_dental_care.md > How often should children visit the dentist in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d19",
+      "type": "answerable",
+      "question": "How much tandvårdsbidrag does a 45-year-old get?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.768)",
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over? (0.726)",
+        "08_swedish_dental_subsidy_system.md > What does dental care cost for elderly people? (0.692)",
+        "08_swedish_dental_subsidy_system.md > What is högkostnadsskyddet? (0.677)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "A 45-year-old receives 300 SEK per year in tandvårdsbidraget.",
+      "raw_answer": "A 45-year-old receives 300 SEK per year in tandvårdsbidraget [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 1,
+      "missed_facts": []
+    },
+    {
+      "id": "d20",
+      "type": "answerable",
+      "question": "If my dental treatment costs 10,000 SEK, how much do I pay with högkostnadsskyddet?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is högkostnadsskyddet? (0.877)",
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover? (0.790)",
+        "03_root_canal.md > How much does a root canal cost in Sweden? (0.769)",
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.768)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "With högkostnadsskyddet, for a treatment costing 10,000 SEK, you would pay:\n\n- Full cost up to 3,000 SEK: 3,000 SEK\n- 50% of the cost from 3,000 to 10,000 SEK: 3,500 SEK (which is 50% of 7,000 SEK)\n\nTotal payment: 3,000 + 3,500 = 6,500 SEK.",
+      "raw_answer": "With högkostnadsskyddet, for a treatment costing 10,000 SEK, you would pay:\n\n- Full cost up to 3,000 SEK: 3,000 SEK\n- 50% of the cost from 3,000 to 10,000 SEK: 3,500 SEK (which is 50% of 7,000 SEK)\n\nTotal payment: 3,000 + 3,500 = 6,500 SEK [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What is högkostnadsskyddet?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d21",
+      "type": "answerable",
+      "question": "Does högkostnadsskyddet cover teeth whitening?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover? (0.827)",
+        "08_swedish_dental_subsidy_system.md > What is högkostnadsskyddet? (0.781)",
+        "09_teeth_whitening.md > What are the rules for whitening products in Sweden? (0.753)",
+        "09_teeth_whitening.md > What whitening options are available in Sweden? (0.743)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 0.5,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Högkostnadsskyddet does not cover teeth whitening and other cosmetic dental care.",
+      "raw_answer": "Högkostnadsskyddet does not cover teeth whitening and other cosmetic dental care [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 1,
+      "missed_facts": []
+    },
+    {
+      "id": "d22",
+      "type": "answerable",
+      "question": "What does tiotandvård not cover?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over? (0.732)",
+        "08_swedish_dental_subsidy_system.md > What is Folktandvården? (0.595)",
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover? (0.584)",
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.566)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Tiotandvård does not cover:\n\n- Examinations\n- Preventive care such as cleaning and tartar removal\n- X-rays.",
+      "raw_answer": "Tiotandvård does not cover:\n\n- Examinations\n- Preventive care such as cleaning and tartar removal\n- X-rays [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d23",
+      "type": "answerable",
+      "question": "Can a private dentist charge more than the reference price?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is the reference price? (0.774)",
+        "08_swedish_dental_subsidy_system.md > Can I go to a private dentist instead? (0.757)",
+        "05_toothache_dental_emergencies.md > What are the costs for emergency dental care in Sweden? (0.661)",
+        "10_orthodontics_braces.md > What does orthodontic treatment cost for adults in Sweden? (0.658)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.5,
+        "n_retrieved": 4
+      },
+      "answer": "Yes, a private dentist can charge more than the reference price for regular treatments. However, for treatments covered by tiotandvård, they cannot charge more than the reference price. If a clinic charges more than the reference price, you pay the difference yourself, and it does not count toward the high-cost protection.",
+      "raw_answer": "Yes, a private dentist can charge more than the reference price for regular treatments. However, for treatments covered by tiotandvård, they cannot charge more than the reference price. If a clinic charges more than the reference price, you pay the difference yourself, and it does not count toward the high-cost protection [2].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > Can I go to a private dentist instead?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d24",
+      "type": "answerable",
+      "question": "Who can get the special dental care allowance?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is the special dental care allowance? (0.859)",
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.752)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.703)",
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover? (0.699)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "The special dental care allowance (särskilt tandvårdsbidrag) is for people with certain diseases or disabilities that increase the risk of dental problems. It is meant for preventive care. Examples include:\n\n- People with dry mouth caused by medication or radiation treatment to the head and neck\n- People with certain chronic diseases such as Sjögren's syndrome or Crohn's disease\n- People with disabilities that make it hard to maintain oral hygiene\n\nThe dentist or dental hygienist decides whether you are eligible, and you may need a doctor's certificate.",
+      "raw_answer": "The special dental care allowance (särskilt tandvårdsbidrag) is for people with certain diseases or disabilities that increase the risk of dental problems. It is meant for preventive care. Examples include:\n\n- People with dry mouth caused by medication or radiation treatment to the head and neck\n- People with certain chronic diseases such as Sjögren's syndrome or Crohn's disease\n- People with disabilities that make it hard to maintain oral hygiene\n\nThe dentist or dental hygienist decides whether you are eligible, and you may need a doctor's certificate [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What is the special dental care allowance?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 6,
+      "missed_facts": []
+    },
+    {
+      "id": "d25",
+      "type": "answerable",
+      "question": "Can I buy strong peroxide whitening strips at a Swedish pharmacy?",
+      "retrieved": [
+        "09_teeth_whitening.md > What are the rules for whitening products in Sweden? (0.777)",
+        "09_teeth_whitening.md > What whitening options are available in Sweden? (0.743)",
+        "09_teeth_whitening.md > How much does teeth whitening cost in Sweden? (0.670)",
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden? (0.628)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "No, you cannot buy strong peroxide whitening strips at a Swedish pharmacy. Products sold in shops may contain at most 0.1% hydrogen peroxide. Higher concentrations can only be used after an examination by a dentist.",
+      "raw_answer": "No, you cannot buy strong peroxide whitening strips at a Swedish pharmacy. Products sold in shops may contain at most 0.1% hydrogen peroxide. Higher concentrations can only be used after an examination by a dentist [1].",
+      "refused": false,
+      "cited": [
+        "09_teeth_whitening.md > What are the rules for whitening products in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.6666666666666666,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": [
+        "Whitening above 0.1% is not allowed for people under 18"
+      ]
+    },
+    {
+      "id": "d26",
+      "type": "answerable",
+      "question": "Will whitening change the color of my crown?",
+      "retrieved": [
+        "09_teeth_whitening.md > Does whitening work on fillings, crowns, and veneers? (0.795)",
+        "09_teeth_whitening.md > Is teeth whitening safe? (0.702)",
+        "09_teeth_whitening.md > How long does the result last? (0.695)",
+        "09_teeth_whitening.md > What is teeth whitening? (0.688)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "No, whitening only works on natural teeth. Fillings, crowns, and veneers keep their original color, so they may look darker than the teeth around them after whitening. They may need to be replaced to match.",
+      "raw_answer": "No, whitening only works on natural teeth. Fillings, crowns, and veneers keep their original color, so they may look darker than the teeth around them after whitening. They may need to be replaced to match [1].",
+      "refused": false,
+      "cited": [
+        "09_teeth_whitening.md > Does whitening work on fillings, crowns, and veneers?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d27",
+      "type": "answerable",
+      "question": "Are braces free for teenagers in Sweden?",
+      "retrieved": [
+        "10_orthodontics_braces.md > Are braces free for children in Sweden? (0.802)",
+        "07_pediatric_dental_care.md > What is free dental care for children and young people in Sweden? (0.792)",
+        "10_orthodontics_braces.md > What does orthodontic treatment cost for adults in Sweden? (0.735)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.731)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Orthodontic treatment can be free for children and young people as part of free dental care, which lasts until 31 December of the year they turn 19. The treatment must be judged necessary for health reasons, not only for appearance. Children with severe bite problems are prioritized, while minor cosmetic problems are usually not treated for free.",
+      "raw_answer": "Orthodontic treatment can be free for children and young people as part of free dental care, which lasts until 31 December of the year they turn 19 [1]. The treatment must be judged necessary for health reasons, not only for appearance. Children with severe bite problems are prioritized, while minor cosmetic problems are usually not treated for free [1].",
+      "refused": false,
+      "cited": [
+        "10_orthodontics_braces.md > Are braces free for children in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.6666666666666666,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": [
+        "Each region decides which levels of need it treats"
+      ]
+    },
+    {
+      "id": "d28",
+      "type": "answerable",
+      "question": "Why do I need a retainer after braces?",
+      "retrieved": [
+        "10_orthodontics_braces.md > What is a retainer and why do I need it? (0.850)",
+        "10_orthodontics_braces.md > Does it hurt to have braces? (0.752)",
+        "10_orthodontics_braces.md > How do I take care of my teeth with braces? (0.694)",
+        "10_orthodontics_braces.md > What types of braces are there? (0.675)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "A retainer holds your teeth in their new position after braces, as they tend to try to move back to where they were. Many orthodontists recommend using a retainer for many years, often for life, to maintain the results achieved with braces.",
+      "raw_answer": "A retainer holds your teeth in their new position after braces, as they tend to try to move back to where they were. Many orthodontists recommend using a retainer for many years, often for life, to maintain the results achieved with braces [1].",
+      "refused": false,
+      "cited": [
+        "10_orthodontics_braces.md > What is a retainer and why do I need it?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.75,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": [
+        "It can be a fixed wire behind the front teeth or a removable tray worn at night"
+      ]
+    },
+    {
+      "id": "d29",
+      "type": "answerable",
+      "question": "Which drinks cause dental erosion?",
+      "retrieved": [
+        "11_sensitive_teeth_erosion.md > What causes dental erosion? (0.814)",
+        "11_sensitive_teeth_erosion.md > What is dental erosion? (0.770)",
+        "11_sensitive_teeth_erosion.md > How can I prevent dental erosion? (0.754)",
+        "07_pediatric_dental_care.md > What is baby bottle tooth decay? (0.716)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Drinks that can cause dental erosion include:\n\n- Acidic drinks such as soft drinks (including sugar-free ones)\n- Energy drinks\n- Sports drinks\n- Juice\n- Smoothies\n- Flavored water.",
+      "raw_answer": "Drinks that can cause dental erosion include:\n\n- Acidic drinks such as soft drinks (including sugar-free ones)\n- Energy drinks\n- Sports drinks\n- Juice\n- Smoothies\n- Flavored water [1].",
+      "refused": false,
+      "cited": [
+        "11_sensitive_teeth_erosion.md > What causes dental erosion?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 6,
+      "missed_facts": []
+    },
+    {
+      "id": "d30",
+      "type": "answerable",
+      "question": "Should I brush my teeth right after drinking orange juice?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.742)",
+        "13_oral_hygiene_prevention.md > How does diet affect my teeth? (0.702)",
+        "11_sensitive_teeth_erosion.md > How can I prevent dental erosion? (0.695)",
+        "09_teeth_whitening.md > How can I keep my teeth white after whitening? (0.691)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.3333333333333333,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "You should wait about an hour after consuming acidic food or drinks, like orange juice, before brushing your teeth. This helps prevent brushing away softened enamel.",
+      "raw_answer": "You should wait about an hour after consuming acidic food or drinks, like orange juice, before brushing your teeth. This helps prevent brushing away softened enamel [3].",
+      "refused": false,
+      "cited": [
+        "11_sensitive_teeth_erosion.md > How can I prevent dental erosion?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "d31",
+      "type": "answerable",
+      "question": "Do wisdom teeth always have to be removed?",
+      "retrieved": [
+        "12_wisdom_teeth_extraction.md > Do wisdom teeth always need to be removed? (0.872)",
+        "12_wisdom_teeth_extraction.md > How is a tooth removed? (0.790)",
+        "12_wisdom_teeth_extraction.md > What are wisdom teeth? (0.751)",
+        "12_wisdom_teeth_extraction.md > How much pain and swelling is normal? (0.719)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "No, wisdom teeth are not removed just in case in Sweden. They are left in place if they are healthy, have room, and can be kept clean. They are removed if they cause problems, such as:\n\n- Repeated infection of the gum around a partly erupted wisdom tooth (pericoronitis).\n- A cavity in the wisdom tooth or in the tooth in front of it that cannot be treated.\n- Damage to the neighboring tooth.\n- A cyst around the wisdom tooth.\n- Gum disease around the wisdom tooth.",
+      "raw_answer": "No, wisdom teeth are not removed just in case in Sweden. They are left in place if they are healthy, have room, and can be kept clean. They are removed if they cause problems, such as:\n\n- Repeated infection of the gum around a partly erupted wisdom tooth (pericoronitis) [1].\n- A cavity in the wisdom tooth or in the tooth in front of it that cannot be treated [1].\n- Damage to the neighboring tooth [1].\n- A cyst around the wisdom tooth [1].\n- Gum disease around the wisdom tooth [1].",
+      "refused": false,
+      "cited": [
+        "12_wisdom_teeth_extraction.md > Do wisdom teeth always need to be removed?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 7,
+      "missed_facts": []
+    },
+    {
+      "id": "d32",
+      "type": "answerable",
+      "question": "What should I avoid after having a tooth pulled?",
+      "retrieved": [
+        "12_wisdom_teeth_extraction.md > What should I do after a tooth extraction? (0.759)",
+        "12_wisdom_teeth_extraction.md > When should I contact the dentist after an extraction? (0.738)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.735)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.720)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "After having a tooth pulled, you should avoid the following:\n\n- Rinsing your mouth, spitting, or drinking through a straw for the first day to keep the blood clot in place.\n- Hot food and drinks while the area is numb.\n- Smoking or using snus for at least a few days, as it slows healing and increases the risk of complications.",
+      "raw_answer": "After having a tooth pulled, you should avoid the following:\n\n- Rinsing your mouth, spitting, or drinking through a straw for the first day to keep the blood clot in place [1].\n- Hot food and drinks while the area is numb [1].\n- Smoking or using snus for at least a few days, as it slows healing and increases the risk of complications [1].",
+      "refused": false,
+      "cited": [
+        "12_wisdom_teeth_extraction.md > What should I do after a tooth extraction?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d33",
+      "type": "answerable",
+      "question": "What is the 2-2-2 method?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.554)",
+        "03_root_canal.md > What is a root canal? (0.533)",
+        "09_teeth_whitening.md > What is teeth whitening? (0.526)",
+        "03_root_canal.md > What is the success rate? (0.513)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "The 2-2-2 method is a simple Swedish rule for brushing teeth:\n\n- Brush 2 times a day, morning and evening.\n- Use 2 centimeters of fluoride toothpaste for adults.\n- Brush for 2 minutes.\n\nAdditionally, avoid eating or drinking for 2 hours after brushing in the evening, and do not rinse with water after brushing, only spit.",
+      "raw_answer": "The 2-2-2 method is a simple Swedish rule for brushing teeth:\n\n- Brush 2 times a day, morning and evening [1].\n- Use 2 centimeters of fluoride toothpaste for adults [1].\n- Brush for 2 minutes [1].\n\nAdditionally, avoid eating or drinking for 2 hours after brushing in the evening, and do not rinse with water after brushing, only spit [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > How should I brush my teeth?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 5,
+      "missed_facts": []
+    },
+    {
+      "id": "d34",
+      "type": "answerable",
+      "question": "I'm terrified of the dentist. What can I do?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > I am afraid of going to the dentist. What can I do? (0.835)",
+        "11_sensitive_teeth_erosion.md > When should I see a dentist for sensitive teeth? (0.700)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.699)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.689)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Dental fear (tandvårdsrädsla) is common. Here are some steps you can take:\n\n- Tell the clinic about your fear when you book, so they can give you more time and go through everything step by step.\n- You can agree on a stop signal, such as raising your hand.\n- Many clinics offer calming medication or sedation.\n- Some Folktandvården clinics have special teams for people with severe dental fear that offer gradual treatment.\n- People with severe dental fear may be eligible for dental care at the same cost as medical care in some cases.",
+      "raw_answer": "Dental fear (tandvårdsrädsla) is common. Here are some steps you can take:\n\n- Tell the clinic about your fear when you book, so they can give you more time and go through everything step by step [1].\n- You can agree on a stop signal, such as raising your hand [1].\n- Many clinics offer calming medication or sedation [1].\n- Some Folktandvården clinics have special teams for people with severe dental fear that offer gradual treatment [1].\n- People with severe dental fear may be eligible for dental care at the same cost as medical care in some cases [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > I am afraid of going to the dentist. What can I do?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 6,
+      "missed_facts": []
+    },
+    {
+      "id": "d35",
+      "type": "answerable",
+      "question": "What is a snus lesion?",
+      "retrieved": [
+        "14_lifestyle_snus_bad_breath_grinding.md > How does snus affect my teeth and gums? (0.684)",
+        "06_oral_mucosa_mouth_sores.md > What is oral candidiasis (thrush)? (0.625)",
+        "06_oral_mucosa_mouth_sores.md > What is oral herpes (cold sores)? (0.607)",
+        "06_oral_mucosa_mouth_sores.md > What are aphthous ulcers (mouth ulcers)? (0.601)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "A snus lesion is a white, wrinkled, or thickened patch that appears on the inside of the lip where snus is placed. It usually goes away if you stop using snus or move it to another location.",
+      "raw_answer": "A snus lesion is a white, wrinkled, or thickened patch that appears on the inside of the lip where snus is placed. It usually goes away if you stop using snus or move it to another location. [1]",
+      "refused": false,
+      "cited": [
+        "14_lifestyle_snus_bad_breath_grinding.md > How does snus affect my teeth and gums?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "d36",
+      "type": "answerable",
+      "question": "Can I get dental treatment while I'm pregnant?",
+      "retrieved": [
+        "14_lifestyle_snus_bad_breath_grinding.md > Is it safe to go to the dentist when pregnant? (0.852)",
+        "14_lifestyle_snus_bad_breath_grinding.md > How does pregnancy affect my teeth? (0.757)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.682)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.679)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "Yes. Checkups, cleaning, and needed treatments like fillings can be done during pregnancy, and local anesthesia is safe. The second trimester is often the most comfortable time for treatment. Dental X-rays can be taken if needed, but non-urgent X-rays are often postponed. Tell your dentist that you are pregnant. Teeth whitening should be postponed until after pregnancy and breastfeeding.",
+      "raw_answer": "Yes. Checkups, cleaning, and needed treatments like fillings can be done during pregnancy, and local anesthesia is safe. The second trimester is often the most comfortable time for treatment. Dental X-rays can be taken if needed, but non-urgent X-rays are often postponed. Tell your dentist that you are pregnant. Teeth whitening should be postponed until after pregnancy and breastfeeding [1].",
+      "refused": false,
+      "cited": [
+        "14_lifestyle_snus_bad_breath_grinding.md > Is it safe to go to the dentist when pregnant?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 6,
+      "missed_facts": []
+    },
+    {
+      "id": "d37",
+      "type": "answerable",
+      "question": "How much does a dental crown cost for a 50-year-old?",
+      "retrieved": [
+        "15_crowns_bridges_dentures.md > How much does a crown cost in Sweden? (0.717)",
+        "08_swedish_dental_subsidy_system.md > What does dental care cost for elderly people? (0.704)",
+        "04_dental_implants.md > How much do implants cost in Sweden? (0.668)",
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.660)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "A crown usually costs around 6,000–10,000 SEK depending on the clinic and material. This is a rough guide. Crowns are covered by högkostnadsskyddet. However, there is no specific information about costs for a 50-year-old in the context provided.",
+      "raw_answer": "A crown usually costs around 6,000–10,000 SEK depending on the clinic and material. This is a rough guide. Crowns are covered by högkostnadsskyddet. However, there is no specific information about costs for a 50-year-old in the context provided. [1]",
+      "refused": false,
+      "cited": [
+        "15_crowns_bridges_dentures.md > How much does a crown cost in Sweden?"
+      ],
+      "leaks": [
+        "mentions context/sources"
+      ],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "d38",
+      "type": "answerable",
+      "question": "What are my options for replacing a missing tooth?",
+      "retrieved": [
+        "15_crowns_bridges_dentures.md > What are the options for replacing a missing tooth? (0.842)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.742)",
+        "03_root_canal.md > Is tooth extraction better than a root canal? (0.716)",
+        "04_dental_implants.md > Are there alternatives to implants? (0.707)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.5,
+        "n_retrieved": 4
+      },
+      "answer": "You have several options for replacing a missing tooth:\n\n- Implant with crown: Most like a natural tooth and does not affect neighboring teeth, but costs the most and takes several months.\n- Bridge: Fixed and quicker than an implant, but requires grinding down the neighboring teeth.\n- Partial denture: Cheapest and removable, but less comfortable and stable.\n- Leaving the gap: Sometimes acceptable, especially at the back of the mouth, but neighboring teeth can move into the gap.\n\nYour dentist can provide more information on which options fit your situation and their costs.",
+      "raw_answer": "You have several options for replacing a missing tooth:\n\n- Implant with crown: Most like a natural tooth and does not affect neighboring teeth, but costs the most and takes several months [1].\n- Bridge: Fixed and quicker than an implant, but requires grinding down the neighboring teeth [1].\n- Partial denture: Cheapest and removable, but less comfortable and stable [1].\n- Leaving the gap: Sometimes acceptable, especially at the back of the mouth, but neighboring teeth can move into the gap [1].\n\nYour dentist can provide more information on which options fit your situation and their costs [1].",
+      "refused": false,
+      "cited": [
+        "15_crowns_bridges_dentures.md > What are the options for replacing a missing tooth?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 5,
+      "missed_facts": []
+    },
+    {
+      "id": "d39",
+      "type": "partial",
+      "question": "How much does a filling cost at Folktandvården in Umeå?",
+      "retrieved": [
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.817)",
+        "03_root_canal.md > How much does a root canal cost in Sweden? (0.696)",
+        "15_crowns_bridges_dentures.md > How much does a crown cost in Sweden? (0.680)",
+        "04_dental_implants.md > How much do implants cost in Sweden? (0.670)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "A simple filling at Folktandvården typically costs between 500–1,200 SEK depending on size and complexity. I don't have specific information about the costs in Umeå.",
+      "raw_answer": "A simple filling at Folktandvården typically costs between 500–1,200 SEK depending on size and complexity [1]. I don't have specific information about the costs in Umeå.",
+      "refused": false,
+      "cited": [
+        "01_cavities_caries.md > How much does a filling cost in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "d40",
+      "type": "partial",
+      "question": "What dose of antibiotics should I take for a tooth abscess?",
+      "retrieved": [
+        "05_toothache_dental_emergencies.md > What is a dental abscess? (0.713)",
+        "13_oral_hygiene_prevention.md > What toothpaste should I use? (0.708)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.678)",
+        "01_cavities_caries.md > How can I prevent cavities? (0.648)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 0.5,
+        "rr": 1.0,
+        "precision": 0.25,
+        "n_retrieved": 4
+      },
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correctness": 1,
+      "completeness": 0.0,
+      "accurate": false,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "missed_facts": [
+        "Antibiotics alone are not enough; the source of the infection must be treated with a root canal or extraction",
+        "Does not give a dose; says it does not have dosing information or that a dentist must decide"
+      ]
+    },
+    {
+      "id": "d41",
+      "type": "out_of_scope",
+      "question": "Which Folktandvården clinic in Göteborg has the shortest waiting time?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is Folktandvården? (0.686)",
+        "07_pediatric_dental_care.md > How often should children visit the dentist in Sweden? (0.647)",
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.633)",
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.629)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    },
+    {
+      "id": "d42",
+      "type": "out_of_scope",
+      "question": "Will Folksam's private health insurance pay for my implant?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > Can I go to a private dentist instead? (0.631)",
+        "04_dental_implants.md > How much do implants cost in Sweden? (0.596)",
+        "04_dental_implants.md > How do I care for an implant? (0.573)",
+        "04_dental_implants.md > Are implants painful? (0.569)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    },
+    {
+      "id": "d43",
+      "type": "out_of_scope",
+      "question": "How do I fix my dog's broken tooth?",
+      "retrieved": [
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.726)",
+        "05_toothache_dental_emergencies.md > What if a tooth is cracked or chipped? (0.705)",
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth? (0.687)",
+        "11_sensitive_teeth_erosion.md > How can I treat sensitive teeth at home? (0.677)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    },
+    {
+      "id": "d44",
+      "type": "out_of_scope",
+      "question": "What's a good recipe for kanelbullar?",
+      "retrieved": [],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    }
+  ]
+}

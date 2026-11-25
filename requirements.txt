@@ -1,0 +1,11 @@
+langchain-core
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+chromadb
+python-dotenv
+# Local nomic-embed-text embeddings (no Ollama)
+sentence-transformers>=5,<6
+# nomic-embed-text's custom model code uses get_extended_attention_mask, removed in transformers 5
+transformers>=4.45,<5
+einops

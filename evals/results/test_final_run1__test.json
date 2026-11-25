@@ -1,0 +1,876 @@
+{
+  "config": {
+    "set": "test",
+    "tag": "test_final_run1",
+    "top_k": 5,
+    "min_similarity": 0.5,
+    "prompt_version": "v3",
+    "llm": "gpt-4o-mini",
+    "judge": "gpt-4.1-mini",
+    "n_questions": 26,
+    "eval_fingerprint": "07894137735b",
+    "run_at": "2026-11-26T00:21:38"
+  },
+  "summary": {
+    "retrieval_hit_at_k": 0.9545454545454546,
+    "retrieval_recall_at_k": 0.9318181818181818,
+    "retrieval_mrr": 0.875,
+    "retrieval_precision_at_k": 0.2545454545454546,
+    "avg_chunks_retrieved": 5,
+    "answer_accuracy": 0.9545454545454546,
+    "answer_correctness_avg": 4.7272727272727275,
+    "faithfulness": 0.9090909090909091,
+    "completeness": 0.8560606060606061,
+    "false_refusal_rate": 0,
+    "correct_refusal_rate": 1,
+    "leak_rate": 0.038461538461538464
+  },
+  "rows": [
+    {
+      "id": "t01",
+      "type": "answerable",
+      "question": "my gums bleed every time i floss, is that bad?",
+      "retrieved": [
+        "02_gum_disease_periodontitis.md > How can I prevent gum disease? (0.705)",
+        "02_gum_disease_periodontitis.md > What are the symptoms of gum disease? (0.687)",
+        "13_oral_hygiene_prevention.md > Should I use dental floss or interdental brushes? (0.685)",
+        "14_lifestyle_snus_bad_breath_grinding.md > How does smoking affect my teeth and gums? (0.673)",
+        "02_gum_disease_periodontitis.md > What is the difference between gingivitis and periodontitis? (0.664)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "Bleeding gums when brushing or flossing can be a symptom of gum disease. It is important to address this issue, as it may indicate gingivitis, which is the earliest stage of gum disease. Gingivitis is characterized by red, swollen gums that bleed easily but is fully reversible with proper cleaning and improved home care. If you experience persistent bleeding, it is advisable to consult a dental professional for further evaluation and care.",
+      "raw_answer": "Bleeding gums when brushing or flossing can be a symptom of gum disease [2]. It is important to address this issue, as it may indicate gingivitis, which is the earliest stage of gum disease. Gingivitis is characterized by red, swollen gums that bleed easily but is fully reversible with proper cleaning and improved home care [5]. If you experience persistent bleeding, it is advisable to consult a dental professional for further evaluation and care.",
+      "refused": false,
+      "cited": [
+        "02_gum_disease_periodontitis.md > What are the symptoms of gum disease?",
+        "02_gum_disease_periodontitis.md > What is the difference between gingivitis and periodontitis?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": false,
+      "incorrect_claims": [],
+      "unsupported_claims": [
+        "If you experience persistent bleeding, it is advisable to consult a dental professional for further evaluation and care."
+      ],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "t02",
+      "type": "answerable",
+      "question": "how long is a root canal appointment",
+      "retrieved": [
+        "03_root_canal.md > How long does a root canal take in Sweden? (0.834)",
+        "03_root_canal.md > Is a root canal painful? (0.680)",
+        "03_root_canal.md > What is a root canal? (0.675)",
+        "03_root_canal.md > What happens after a root canal? (0.674)",
+        "03_root_canal.md > What is the success rate? (0.668)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Most root canals are completed in 1–2 appointments of 60–90 minutes each. More complex cases involving molars with multiple canals may require additional visits.",
+      "raw_answer": "Most root canals are completed in 1–2 appointments of 60–90 minutes each [1]. More complex cases involving molars with multiple canals may require additional visits [1].",
+      "refused": false,
+      "cited": [
+        "03_root_canal.md > How long does a root canal take in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "t03",
+      "type": "answerable",
+      "question": "implant or bridge, which one is better for one missing tooth?",
+      "retrieved": [
+        "15_crowns_bridges_dentures.md > What are the options for replacing a missing tooth? (0.773)",
+        "15_crowns_bridges_dentures.md > What is a dental bridge? (0.768)",
+        "04_dental_implants.md > Are there alternatives to implants? (0.752)",
+        "03_root_canal.md > Is tooth extraction better than a root canal? (0.708)",
+        "04_dental_implants.md > What is a dental implant? (0.680)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "- An implant with a crown is most like a natural tooth and does not affect neighboring teeth, but it costs the most and takes several months.\n- A bridge is fixed and quicker than an implant, but it requires grinding down the neighboring teeth.\n\nYour dentist can tell you which option fits your situation and what they cost before you decide.",
+      "raw_answer": "- An implant with a crown is most like a natural tooth and does not affect neighboring teeth, but it costs the most and takes several months [1][5].\n- A bridge is fixed and quicker than an implant, but it requires grinding down the neighboring teeth [1][2].\n\nYour dentist can tell you which option fits your situation and what they cost before you decide [1].",
+      "refused": false,
+      "cited": [
+        "15_crowns_bridges_dentures.md > What are the options for replacing a missing tooth?",
+        "15_crowns_bridges_dentures.md > What is a dental bridge?",
+        "04_dental_implants.md > What is a dental implant?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "t04",
+      "type": "answerable",
+      "question": "My 8 year old needs a filling. Do we have to pay for it?",
+      "retrieved": [
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.669)",
+        "10_orthodontics_braces.md > Are braces free for children in Sweden? (0.604)",
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth? (0.599)",
+        "07_pediatric_dental_care.md > What is free dental care for children and young people in Sweden? (0.594)",
+        "08_swedish_dental_subsidy_system.md > Do I have the right to an interpreter at the dentist? (0.594)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 0.5,
+        "rr": 0.25,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Your 8-year-old will receive free dental care until 31 December of the year they turn 19. This free care includes necessary treatments such as fillings. Therefore, you do not have to pay for the filling.",
+      "raw_answer": "Your 8-year-old will receive free dental care until 31 December of the year they turn 19. This free care includes necessary treatments such as fillings [4]. Therefore, you do not have to pay for the filling.",
+      "refused": false,
+      "cited": [
+        "07_pediatric_dental_care.md > What is free dental care for children and young people in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "t05",
+      "type": "answerable",
+      "question": "I'm 68 and need an implant for a back molar. Is that covered by tiotandvård?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over? (0.792)",
+        "08_swedish_dental_subsidy_system.md > What does dental care cost for elderly people? (0.679)",
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.637)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.619)",
+        "08_swedish_dental_subsidy_system.md > What if I cannot afford dental treatment? (0.603)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "Tiotandvård covers crowns, bridges, and implants, but only for the ten front teeth of the upper and lower jaw (tooth positions 1–5 on each side, from the front tooth back to and including the first two premolars). Since a back molar is not included in this coverage, it would not be covered by tiotandvård.",
+      "raw_answer": "Tiotandvård covers crowns, bridges, and implants, but only for the ten front teeth of the upper and lower jaw (tooth positions 1–5 on each side, from the front tooth back to and including the first two premolars) [1]. Since a back molar is not included in this coverage, it would not be covered by tiotandvård.",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.6666666666666666,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": [
+        "Treatments not covered by tiotandvård fall under the regular högkostnadsskydd"
+      ]
+    },
+    {
+      "id": "t06",
+      "type": "answerable",
+      "question": "whats the strongest peroxide a dentist is allowed to use for whitening",
+      "retrieved": [
+        "09_teeth_whitening.md > What are the rules for whitening products in Sweden? (0.754)",
+        "09_teeth_whitening.md > What whitening options are available in Sweden? (0.701)",
+        "09_teeth_whitening.md > What is teeth whitening? (0.700)",
+        "09_teeth_whitening.md > How long does the result last? (0.677)",
+        "13_oral_hygiene_prevention.md > What toothpaste should I use? (0.669)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "A dentist is allowed to use whitening products with up to 6% hydrogen peroxide for cosmetic whitening.",
+      "raw_answer": "A dentist is allowed to use whitening products with up to 6% hydrogen peroxide for cosmetic whitening [1].",
+      "refused": false,
+      "cited": [
+        "09_teeth_whitening.md > What are the rules for whitening products in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.5,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 1,
+      "missed_facts": [
+        "Products above 6% are not allowed for cosmetic whitening"
+      ]
+    },
+    {
+      "id": "t07",
+      "type": "answerable",
+      "question": "I brush twice a day but still have bad breath, why?",
+      "retrieved": [
+        "14_lifestyle_snus_bad_breath_grinding.md > How can I get rid of bad breath? (0.734)",
+        "14_lifestyle_snus_bad_breath_grinding.md > What causes bad breath? (0.694)",
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.682)",
+        "02_gum_disease_periodontitis.md > How can I prevent gum disease? (0.655)",
+        "13_oral_hygiene_prevention.md > Should I use dental floss or interdental brushes? (0.653)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "Bad breath can be caused by several factors, even if you brush twice a day. Common causes include:\n\n- Poor cleaning of the teeth, tongue, and between the teeth.\n- Gum disease.\n- Dry mouth, which can occur during sleep.\n- Certain foods like garlic and onion.\n- Smoking and using snus.\n- Less often, problems in the nose, throat, tonsils, or stomach.\n\nIf bad breath persists despite maintaining good oral hygiene, it is advisable to see a doctor to check the nose, throat, and stomach.",
+      "raw_answer": "Bad breath can be caused by several factors, even if you brush twice a day. Common causes include:\n\n- Poor cleaning of the teeth, tongue, and between the teeth [2].\n- Gum disease [2].\n- Dry mouth, which can occur during sleep [2].\n- Certain foods like garlic and onion [2].\n- Smoking and using snus [2].\n- Less often, problems in the nose, throat, tonsils, or stomach [2].\n\nIf bad breath persists despite maintaining good oral hygiene, it is advisable to see a doctor to check the nose, throat, and stomach [1].",
+      "refused": false,
+      "cited": [
+        "14_lifestyle_snus_bad_breath_grinding.md > How can I get rid of bad breath?",
+        "14_lifestyle_snus_bad_breath_grinding.md > What causes bad breath?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 0.6666666666666666,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 8,
+      "missed_facts": [
+        "Clean your tongue and between your teeth every day"
+      ]
+    },
+    {
+      "id": "t08",
+      "type": "answerable",
+      "question": "do electric toothbrushes actually work better than normal ones?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > Is an electric toothbrush better than a manual one? (0.844)",
+        "13_oral_hygiene_prevention.md > Should I use dental floss or interdental brushes? (0.677)",
+        "09_teeth_whitening.md > Does whitening work on fillings, crowns, and veneers? (0.660)",
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.645)",
+        "13_oral_hygiene_prevention.md > Do I need mouthwash? (0.637)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "An electric toothbrush with a rotating head removes slightly more plaque than a manual toothbrush and makes it easier to brush well. A manual toothbrush works well too if you use the right technique. Whichever you use, choose a soft brush, and replace the brush head or toothbrush every three months or when the bristles are worn.",
+      "raw_answer": "An electric toothbrush with a rotating head removes slightly more plaque than a manual toothbrush and makes it easier to brush well. A manual toothbrush works well too if you use the right technique. Whichever you use, choose a soft brush, and replace the brush head or toothbrush every three months or when the bristles are worn [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > Is an electric toothbrush better than a manual one?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "t09",
+      "type": "answerable",
+      "question": "My jaw is sore every morning and my teeth look worn down. What could it be?",
+      "retrieved": [
+        "14_lifestyle_snus_bad_breath_grinding.md > What is teeth grinding (bruxism)? (0.759)",
+        "14_lifestyle_snus_bad_breath_grinding.md > How is teeth grinding treated? (0.712)",
+        "05_toothache_dental_emergencies.md > My face or cheek is swollen, or I have a fever with a toothache. What should I do? (0.712)",
+        "12_wisdom_teeth_extraction.md > How much pain and swelling is normal? (0.708)",
+        "10_orthodontics_braces.md > Does it hurt to have braces? (0.703)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "Your symptoms could be a sign of teeth grinding (bruxism). Common signs include:\n\n- Worn or flat teeth\n- Cracked teeth or fillings\n- Sensitive teeth\n- Sore jaw muscles in the morning\n- Headaches\n- Clicking or pain in the jaw joint.\n\nIt's advisable to seek care from a dental clinic to discuss your symptoms and potential treatment options.",
+      "raw_answer": "Your symptoms could be a sign of teeth grinding (bruxism). Common signs include:\n\n- Worn or flat teeth\n- Cracked teeth or fillings\n- Sensitive teeth\n- Sore jaw muscles in the morning\n- Headaches\n- Clicking or pain in the jaw joint [1].\n\nIt's advisable to seek care from a dental clinic to discuss your symptoms and potential treatment options.",
+      "refused": false,
+      "cited": [
+        "14_lifestyle_snus_bad_breath_grinding.md > What is teeth grinding (bruxism)?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.3333333333333333,
+      "accurate": true,
+      "faithful": false,
+      "incorrect_claims": [],
+      "unsupported_claims": [
+        "It's advisable to seek care from a dental clinic to discuss your symptoms and potential treatment options."
+      ],
+      "n_claims": 3,
+      "missed_facts": [
+        "A bite splint worn at night protects the teeth",
+        "Reducing stress and relaxing the jaw muscles help"
+      ]
+    },
+    {
+      "id": "t10",
+      "type": "answerable",
+      "question": "my baby has white patches in her mouth that wipe off",
+      "retrieved": [
+        "07_pediatric_dental_care.md > What is baby bottle tooth decay? (0.657)",
+        "06_oral_mucosa_mouth_sores.md > What is oral candidiasis (thrush)? (0.631)",
+        "07_pediatric_dental_care.md > What should I do if my child knocks out a tooth? (0.628)",
+        "14_lifestyle_snus_bad_breath_grinding.md > How does pregnancy affect my teeth? (0.626)",
+        "01_cavities_caries.md > What are the stages of tooth decay? (0.621)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "The white patches in your baby's mouth that can be wiped off may be a sign of oral thrush, a fungal infection caused by Candida albicans. This condition often leaves a red or bleeding surface beneath the patches. It is more common in infants, especially those who may be immunocompromised or on antibiotics. Treatment typically involves antifungal medication, such as nystatin suspension or miconazole gel. It's also important to address any underlying causes, such as rinsing the mouth after using an asthma inhaler to prevent steroid-induced thrush.",
+      "raw_answer": "The white patches in your baby's mouth that can be wiped off may be a sign of oral thrush, a fungal infection caused by Candida albicans. This condition often leaves a red or bleeding surface beneath the patches. It is more common in infants, especially those who may be immunocompromised or on antibiotics. Treatment typically involves antifungal medication, such as nystatin suspension or miconazole gel. It's also important to address any underlying causes, such as rinsing the mouth after using an asthma inhaler to prevent steroid-induced thrush [2].",
+      "refused": false,
+      "cited": [
+        "06_oral_mucosa_mouth_sores.md > What is oral candidiasis (thrush)?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 5,
+      "missed_facts": []
+    },
+    {
+      "id": "t11",
+      "type": "answerable",
+      "question": "How often should adults go for a dental checkup in Sweden?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden? (0.898)",
+        "07_pediatric_dental_care.md > How often should children visit the dentist in Sweden? (0.827)",
+        "07_pediatric_dental_care.md > When should my child first see a dentist in Sweden? (0.786)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.774)",
+        "07_pediatric_dental_care.md > What is free dental care for children and young people in Sweden? (0.768)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "In Sweden, the dental clinic decides how often you need a checkup based on your individual risk of cavities and gum disease. For adults with healthy teeth, this is often every 12–24 months. For people with a higher risk, checkups can be more frequent. Many checkups are done by a dental hygienist, who examines the teeth and gums, removes tartar, and gives advice. A dentist is consulted when treatment is needed.",
+      "raw_answer": "In Sweden, the dental clinic decides how often you need a checkup based on your individual risk of cavities and gum disease. For adults with healthy teeth, this is often every 12–24 months. For people with a higher risk, checkups can be more frequent. Many checkups are done by a dental hygienist, who examines the teeth and gums, removes tartar, and gives advice. A dentist is consulted when treatment is needed [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 5,
+      "missed_facts": []
+    },
+    {
+      "id": "t12",
+      "type": "answerable",
+      "question": "I didn't use my tandvårdsbidrag last year, is it gone?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.701)",
+        "08_swedish_dental_subsidy_system.md > What if I cannot afford dental treatment? (0.657)",
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over? (0.647)",
+        "08_swedish_dental_subsidy_system.md > What is Folktandvården? (0.603)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.584)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "No, your unused tandvårdsbidrag can be saved. You can use up to two years' worth at once.",
+      "raw_answer": "No, your unused tandvårdsbidrag can be saved. You can use up to two years' worth at once [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "t13",
+      "type": "answerable",
+      "question": "Had a tooth pulled 3 days ago and the pain is getting much worse and going to my ear",
+      "retrieved": [
+        "12_wisdom_teeth_extraction.md > What is dry socket? (0.737)",
+        "12_wisdom_teeth_extraction.md > How much pain and swelling is normal? (0.726)",
+        "12_wisdom_teeth_extraction.md > When should I contact the dentist after an extraction? (0.716)",
+        "05_toothache_dental_emergencies.md > What should I do if a tooth is knocked out? (0.684)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.666)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "You should contact your dental clinic immediately. Pain that gets worse after the third day can be a sign of dry socket (alveolitis), which causes strong, throbbing pain that may spread toward the ear. It is important to seek care as your dental clinic can clean the socket and place a soothing dressing.",
+      "raw_answer": "You should contact your dental clinic immediately. Pain that gets worse after the third day can be a sign of dry socket (alveolitis), which causes strong, throbbing pain that may spread toward the ear. It is important to seek care as your dental clinic can clean the socket and place a soothing dressing [1][3].",
+      "refused": false,
+      "cited": [
+        "12_wisdom_teeth_extraction.md > What is dry socket?",
+        "12_wisdom_teeth_extraction.md > When should I contact the dentist after an extraction?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "t14",
+      "type": "answerable",
+      "question": "does gum disease have anything to do with diabetes",
+      "retrieved": [
+        "02_gum_disease_periodontitis.md > Is gum disease linked to other health conditions? (0.882)",
+        "02_gum_disease_periodontitis.md > What is gum disease? (0.801)",
+        "02_gum_disease_periodontitis.md > What causes gum disease? (0.800)",
+        "02_gum_disease_periodontitis.md > What are the symptoms of gum disease? (0.778)",
+        "14_lifestyle_snus_bad_breath_grinding.md > How does smoking affect my teeth and gums? (0.750)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Yes, gum disease is linked to diabetes. The relationship is bidirectional: poorly controlled blood sugar worsens gum disease, and gum disease makes blood sugar harder to manage.",
+      "raw_answer": "Yes, gum disease is linked to diabetes. The relationship is bidirectional: poorly controlled blood sugar worsens gum disease, and gum disease makes blood sugar harder to manage [1].",
+      "refused": false,
+      "cited": [
+        "02_gum_disease_periodontitis.md > Is gum disease linked to other health conditions?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "t15",
+      "type": "answerable",
+      "question": "What's the best way to clean between teeth that have big gaps?",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > Should I use dental floss or interdental brushes? (0.818)",
+        "15_crowns_bridges_dentures.md > What are the options for replacing a missing tooth? (0.697)",
+        "02_gum_disease_periodontitis.md > How can I prevent gum disease? (0.687)",
+        "13_oral_hygiene_prevention.md > How should I brush my teeth? (0.679)",
+        "01_cavities_caries.md > How can I prevent cavities? (0.677)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "For cleaning between teeth that have big gaps, interdental brushes (mellanrumsborstar) are recommended as they remove more plaque in wider spaces. The brush should fit snugly without being forced. You can also use toothpicks in wider gaps. Your dental hygienist can show you which size and tool suits you best.",
+      "raw_answer": "For cleaning between teeth that have big gaps, interdental brushes (mellanrumsborstar) are recommended as they remove more plaque in wider spaces. The brush should fit snugly without being forced. You can also use toothpicks in wider gaps. Your dental hygienist can show you which size and tool suits you best [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > Should I use dental floss or interdental brushes?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "t16",
+      "type": "answerable",
+      "question": "eating ice cream hurts my teeth, what toothpaste should I use",
+      "retrieved": [
+        "13_oral_hygiene_prevention.md > What toothpaste should I use? (0.724)",
+        "13_oral_hygiene_prevention.md > How does diet affect my teeth? (0.706)",
+        "01_cavities_caries.md > How can I prevent cavities? (0.687)",
+        "11_sensitive_teeth_erosion.md > How can I prevent dental erosion? (0.684)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.678)"
+      ],
+      "retrieval": {
+        "hit": false,
+        "recall": 0.0,
+        "rr": 0.0,
+        "precision": 0.0,
+        "n_retrieved": 5
+      },
+      "answer": "Use a toothpaste with fluoride. For adults and children from age 6, a toothpaste with 1,450 ppm fluoride is recommended. People with a high risk of cavities may get a toothpaste with extra high fluoride (5,000 ppm) on prescription from their dentist.",
+      "raw_answer": "Use a toothpaste with fluoride. For adults and children from age 6, a toothpaste with 1,450 ppm fluoride is recommended. People with a high risk of cavities may get a toothpaste with extra high fluoride (5,000 ppm) on prescription from their dentist [1].",
+      "refused": false,
+      "cited": [
+        "13_oral_hygiene_prevention.md > What toothpaste should I use?"
+      ],
+      "leaks": [],
+      "correctness": 3,
+      "completeness": 0.0,
+      "accurate": false,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": [
+        "Use a toothpaste for sensitive teeth every day",
+        "It can take two to four weeks to work"
+      ]
+    },
+    {
+      "id": "t17",
+      "type": "answerable",
+      "question": "How much does it cost to whiten teeth at a dentist in Sweden?",
+      "retrieved": [
+        "09_teeth_whitening.md > How much does teeth whitening cost in Sweden? (0.906)",
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.810)",
+        "09_teeth_whitening.md > What whitening options are available in Sweden? (0.794)",
+        "04_dental_implants.md > How much do implants cost in Sweden? (0.789)",
+        "03_root_canal.md > How much does a root canal cost in Sweden? (0.774)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Whitening at the clinic usually costs around 3,000–6,000 SEK. Whitening is a cosmetic treatment, so it is not covered by tandvårdsbidraget or högkostnadsskyddet, and you pay the full cost yourself.",
+      "raw_answer": "Whitening at the clinic usually costs around 3,000–6,000 SEK [1]. Whitening is a cosmetic treatment, so it is not covered by tandvårdsbidraget or högkostnadsskyddet, and you pay the full cost yourself [1].",
+      "refused": false,
+      "cited": [
+        "09_teeth_whitening.md > How much does teeth whitening cost in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 4,
+      "completeness": 0.6666666666666666,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": [
+        "Home whitening with custom trays costs around 2,000–4,000 SEK"
+      ]
+    },
+    {
+      "id": "t18",
+      "type": "answerable",
+      "question": "what are veneers and does the state pay for them?",
+      "retrieved": [
+        "15_crowns_bridges_dentures.md > What are veneers? (0.752)",
+        "15_crowns_bridges_dentures.md > How much does a crown cost in Sweden? (0.622)",
+        "09_teeth_whitening.md > Does whitening work on fillings, crowns, and veneers? (0.622)",
+        "15_crowns_bridges_dentures.md > What is a dental crown? (0.611)",
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover? (0.610)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Veneers (fasader) are thin shells of porcelain or composite glued to the front of the front teeth. They change the color, shape, or size of teeth. When done only for appearance, veneers are considered cosmetic treatment and are not covered by högkostnadsskyddet.",
+      "raw_answer": "Veneers (fasader) are thin shells of porcelain or composite glued to the front of the front teeth. They change the color, shape, or size of teeth. When done only for appearance, veneers are considered cosmetic treatment and are not covered by högkostnadsskyddet [1].",
+      "refused": false,
+      "cited": [
+        "15_crowns_bridges_dentures.md > What are veneers?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 3,
+      "missed_facts": []
+    },
+    {
+      "id": "t19",
+      "type": "answerable",
+      "question": "If I go to a private clinic instead of Folktandvården do I still get the subsidies?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > Can I go to a private dentist instead? (0.804)",
+        "08_swedish_dental_subsidy_system.md > What is Folktandvården? (0.748)",
+        "08_swedish_dental_subsidy_system.md > What if I cannot afford dental treatment? (0.702)",
+        "08_swedish_dental_subsidy_system.md > What does högkostnadsskyddet not cover? (0.677)",
+        "08_swedish_dental_subsidy_system.md > What is högkostnadsskyddet? (0.673)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Yes, you can choose any dental clinic, including private ones. Almost all private clinics are affiliated with the state dental subsidy system and apply the same allowances and high-cost protection. However, private clinics set their own prices, which can be higher than Folktandvården's. If a clinic charges more than the reference price, you pay the difference yourself, and it does not count toward the high-cost protection.",
+      "raw_answer": "Yes, you can choose any dental clinic, including private ones. Almost all private clinics are affiliated with the state dental subsidy system and apply the same allowances and high-cost protection. However, private clinics set their own prices, which can be higher than Folktandvården's. If a clinic charges more than the reference price, you pay the difference yourself, and it does not count toward the high-cost protection [1].",
+      "refused": false,
+      "cited": [
+        "08_swedish_dental_subsidy_system.md > Can I go to a private dentist instead?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "t20",
+      "type": "answerable",
+      "question": "When do kids get their first adult teeth?",
+      "retrieved": [
+        "07_pediatric_dental_care.md > When do permanent teeth come in? (0.787)",
+        "07_pediatric_dental_care.md > When do baby teeth come in? (0.780)",
+        "07_pediatric_dental_care.md > When should my child first see a dentist in Sweden? (0.736)",
+        "10_orthodontics_braces.md > Can adults get braces? (0.709)",
+        "07_pediatric_dental_care.md > What is free dental care for children and young people in Sweden? (0.706)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "Permanent teeth begin erupting around age 6, typically starting with the first molars and lower front incisors. The process continues through to about age 12–13 for most teeth, with wisdom teeth appearing between ages 17–25.",
+      "raw_answer": "Permanent teeth begin erupting around age 6, typically starting with the first molars and lower front incisors. The process continues through to about age 12–13 for most teeth, with wisdom teeth appearing between ages 17–25 [1].",
+      "refused": false,
+      "cited": [
+        "07_pediatric_dental_care.md > When do permanent teeth come in?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 4,
+      "missed_facts": []
+    },
+    {
+      "id": "t21",
+      "type": "answerable",
+      "question": "Will antibiotics fix my dental abscess?",
+      "retrieved": [
+        "05_toothache_dental_emergencies.md > What is a dental abscess? (0.768)",
+        "05_toothache_dental_emergencies.md > My face or cheek is swollen, or I have a fever with a toothache. What should I do? (0.694)",
+        "05_toothache_dental_emergencies.md > What should I do while waiting to see a dentist? (0.683)",
+        "02_gum_disease_periodontitis.md > Can gum disease be cured? (0.667)",
+        "13_oral_hygiene_prevention.md > Do I need mouthwash? (0.658)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.4,
+        "n_retrieved": 5
+      },
+      "answer": "Antibiotics alone are not sufficient to cure a dental abscess. The source of infection must be treated, usually with a root canal or extraction.",
+      "raw_answer": "Antibiotics alone are not sufficient to cure a dental abscess. The source of infection must be treated, usually with a root canal or extraction [1][2].",
+      "refused": false,
+      "cited": [
+        "05_toothache_dental_emergencies.md > What is a dental abscess?",
+        "05_toothache_dental_emergencies.md > My face or cheek is swollen, or I have a fever with a toothache. What should I do?"
+      ],
+      "leaks": [
+        "mentions context/sources"
+      ],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "t22",
+      "type": "partial",
+      "question": "What does a crown cost at Folktandvården in Lund?",
+      "retrieved": [
+        "15_crowns_bridges_dentures.md > How much does a crown cost in Sweden? (0.788)",
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.727)",
+        "08_swedish_dental_subsidy_system.md > What is Folktandvården? (0.716)",
+        "03_root_canal.md > How much does a root canal cost in Sweden? (0.708)",
+        "04_dental_implants.md > How much do implants cost in Sweden? (0.695)"
+      ],
+      "retrieval": {
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "precision": 0.2,
+        "n_retrieved": 5
+      },
+      "answer": "A crown usually costs around 6,000–10,000 SEK depending on the clinic and material. I don't have information about the specific cost at Folktandvården in Lund.",
+      "raw_answer": "A crown usually costs around 6,000–10,000 SEK depending on the clinic and material [1]. I don't have information about the specific cost at Folktandvården in Lund.",
+      "refused": false,
+      "cited": [
+        "15_crowns_bridges_dentures.md > How much does a crown cost in Sweden?"
+      ],
+      "leaks": [],
+      "correctness": 5,
+      "completeness": 1.0,
+      "accurate": true,
+      "faithful": true,
+      "incorrect_claims": [],
+      "unsupported_claims": [],
+      "n_claims": 2,
+      "missed_facts": []
+    },
+    {
+      "id": "t23",
+      "type": "out_of_scope",
+      "question": "What are the opening hours of Folktandvården at Sergels torg?",
+      "retrieved": [
+        "08_swedish_dental_subsidy_system.md > What is Folktandvården? (0.632)",
+        "08_swedish_dental_subsidy_system.md > What is tiotandvård — the reform for people aged 67 and over? (0.565)",
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.564)",
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.552)",
+        "07_pediatric_dental_care.md > When should my child first see a dentist in Sweden? (0.543)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    },
+    {
+      "id": "t24",
+      "type": "out_of_scope",
+      "question": "How do I become a dentist in Sweden?",
+      "retrieved": [
+        "07_pediatric_dental_care.md > When should my child first see a dentist in Sweden? (0.787)",
+        "07_pediatric_dental_care.md > What is free dental care for children and young people in Sweden? (0.770)",
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden? (0.770)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.763)",
+        "09_teeth_whitening.md > What whitening options are available in Sweden? (0.747)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    },
+    {
+      "id": "t25",
+      "type": "out_of_scope",
+      "question": "Which dental insurance company in Sweden is the cheapest?",
+      "retrieved": [
+        "01_cavities_caries.md > How much does a filling cost in Sweden? (0.748)",
+        "08_swedish_dental_subsidy_system.md > What is högkostnadsskyddet? (0.745)",
+        "08_swedish_dental_subsidy_system.md > How does dental care financing work in Sweden? (0.739)",
+        "08_swedish_dental_subsidy_system.md > Can I go to a private dentist instead? (0.737)",
+        "08_swedish_dental_subsidy_system.md > What is tandvårdsbidraget? (0.735)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    },
+    {
+      "id": "t26",
+      "type": "out_of_scope",
+      "question": "What will the weather be like in Stockholm tomorrow?",
+      "retrieved": [
+        "09_teeth_whitening.md > What whitening options are available in Sweden? (0.563)",
+        "09_teeth_whitening.md > What are the rules for whitening products in Sweden? (0.559)",
+        "02_gum_disease_periodontitis.md > How is gum disease treated in Sweden? (0.546)",
+        "13_oral_hygiene_prevention.md > How often should I go to the dentist in Sweden? (0.542)",
+        "10_orthodontics_braces.md > Are braces free for children in Sweden? (0.540)"
+      ],
+      "answer": "I'm sorry, I don't have enough information to answer that question.",
+      "raw_answer": "I'm sorry, I don't have enough information to answer that question.",
+      "refused": true,
+      "cited": [],
+      "leaks": [],
+      "correct": true
+    }
+  ]
+}
